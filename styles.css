@@ -1,0 +1,217 @@
+/*Etiquetas simples*/
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*Fin*/
+
+body {
+    background-color: rgba(0, 0, 0, 0.842);
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(228, 191, 136);
+    align-items: center;
+    padding: 15px;
+}
+
+/*Boton inicio del header*/
+header a i {
+    color: rgb(48, 39, 146);
+    font-size: 2em;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(48, 39, 146);
+    cursor: pointer;
+    display: none;
+}
+
+/*Boton menu del header*/
+/* .menu-logo {
+    filter: invert(11%) sepia(57%) saturate(7371%) hue-rotate(249deg) brightness(75%) contrast(89%);
+    width: 40px;
+    height: 34px;
+    display: none;
+} */
+
+header nav ul {
+    display: flex;
+    gap: 1.6em;
+}
+
+header nav ul li a {
+    font-size: larger;
+}
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.seccion-2 {
+    display: flex;
+}
+
+.seccion-3 {
+    padding:15px;
+    color: white;
+}
+
+.acerca-de {
+    width: 353px;
+    text-align: end;
+    color: white;
+}
+
+.acerca-imagen {
+    display: inherit;
+    margin: 0px 40px;
+}
+
+.draven-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.sam-sulek-img {
+    width: 100%;
+}
+
+.trabajos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 300px;
+    margin: 40px;
+}
+
+.tarjeta img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.tarjeta h3 {
+    text-align: center;
+}
+
+.tarjeta p {
+    display: inline;
+}
+
+.tarjeta .leer-mas {
+    color: yellow;
+}
+
+footer {
+    background-color: rgb(228, 191, 136);
+    color:black;
+    padding: 15px;
+}
+
+footer h2 {
+    margin: 0px;
+    color: rgb(224, 104, 104);
+}
+
+/*Boton volver al inicio*/
+footer a i {
+    color: rgb(17, 12, 78);
+    font-size: 2em;
+    margin: 10px;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+}
+
+@media (max-width: 849px) {
+    header {
+        background-color: black;
+    }
+    
+    /* .menu-logo {
+        display: inline;
+    } */
+
+    .checkbtn {
+        display: block;
+    }
+
+    .acerca-de {
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .seccion-3 h2 {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        background-color: black;
+    }
+
+    footer ul li a{
+        color: white;
+    }
+
+    /*Sliding Menu*/
+
+    header nav ul{
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(228, 191, 136);
+        top: 62px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: rgb(228, 191, 136);
+    }
+
+    header nav ul li {
+        margin: 50px 0;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+}
