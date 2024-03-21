@@ -151,6 +151,11 @@ footer a i {
     right: 0%;
 }
 
+.greeting h2 {
+    color: white;
+    margin: 10px;
+}
+
 @media (max-width: 849px) {
     header {
         background-color: black;
@@ -213,5 +218,11 @@ footer a i {
     header {
         position: fixed;
         width: 100%;
+    }
+
+    .greeting h2 {
+        color: rgb(224, 104, 104);
+        text-align: end;
+        opacity: 50%;
     }
 }
